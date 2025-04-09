@@ -15,7 +15,8 @@
 # Explicar en una oración la estrategia greedy.
 # Definir en una oración cuál es el óptimo local
 # Formato del programa:
-# El archivo a ejecutar se debe llamar main.py Debe recibir por parámetro el nombre de un archivo que contenga las cartas mezcladas. El formato del archivo de cartas debe ser texto. Cada línea del archivo corresponde a una carta. Por ejemplo:
+# El archivo a ejecutar se debe llamar main.py Debe recibir por parámetro el nombre de un archivo que contenga las cartas mezcladas.
+# El formato del archivo de cartas debe ser texto. Cada línea del archivo corresponde a una carta. Por ejemplo:
 
 # 1
 # 4
@@ -39,7 +40,7 @@ def apilar_cartas(archivo):
     
     for carta in cartas:
         apilada = False
-        for pila in reversed(pilas):
+        for pila in pilas:
             if carta < pila[-1]:
                 pila.append(carta)
                 apilada = True
